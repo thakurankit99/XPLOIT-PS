@@ -2,6 +2,8 @@
 
 ## Overview
 
+https://drive.google.com/drive/folders/1d0t3fMXd1-LKiEuzlcpmujsUICeGGkTj
+
 The game binary `xploit.exe` is a PyInstaller-packaged Python 3.10 / Pygame dungeon platformer with 6 stages. Each stage contains a deliberate bug that makes it impossible to complete. Below is the analysis and fix for each.
 
 ### Reverse Engineering Methodology
@@ -240,3 +242,11 @@ Jumped up into the box from below through the opening. Reached the EXIT tile. St
 | 6 | Exit sealed inside closed box | 4 walls, no opening | Removed bottom wall |
 
 All 6 stages are now completable start to finish.
+
+---
+
+## Video Demo
+
+A full playthrough of the patched game clearing all 6 stages can be viewed here:
+
+[Solution Video Demo (Google Drive)](https://drive.google.com/drive/folders/1d0t3fMXd1-LKiEuzlcpmujsUICeGGkTj)
