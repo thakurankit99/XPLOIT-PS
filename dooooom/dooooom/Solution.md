@@ -1,8 +1,13 @@
 # DOOM — Friendly Fire: Companion Bot Writeup
 
-# DRIVE URL for the video soltuion
+---
 
-https://drive.google.com/drive/folders/115YtlDNdq66g7jkymnAku5ePvdggAZxc?usp=sharing
+## 📹 Video Demonstration
+
+**Complete video walkthrough of the solution:**  
+🔗 **[Watch Video on Google Drive](https://drive.google.com/drive/folders/115YtlDNdq66g7jkymnAku5ePvdggAZxc?usp=sharing)** 
+
+---
 
 
 ## What We Built

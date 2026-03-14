@@ -1,11 +1,24 @@
-Provided Files : broken_compiler.exe, program.wut, expected_output.txt
+# .wut Programming Language - Compiler Re-implementation
 
-to dos:
-1. note the current output when the program.wut is run using current compiler
-2. fix/rewrite the compiler so that running it produces excepted_output.txt
-3. write a program in wut to showcase your understanding of it. to get points for this section, your program must atleast be printing a string like your team's name. additional functionality (loops and complex arithmetic) showcasing understanding of language will secure you more points.
+This repository contains the fixed compiler and interpreter for the `.wut` esoteric language, along with a custom program written to demonstrate full understanding of the language semantics.
 
-deliverables:
-1. fixed compiler 
-2. your new program
-3. thorough documentation of process
+## Project Contents
+*   **`wut_interpreter.py`**: The core execution engine for `.wut` files. Developed after reverse-engineering the original binary's logic.
+*   **`wut_compiler.py`**: A transpiler that converts `.wut` source into executable Python code, effectively "fixing" the compilation pipeline.
+*   **`program.wut`**: The original challenge program which outputs the celebratory "Congratulations" message.
+*   **`solution.wut`**: A custom program written from scratch that outputs our team name: "**We are teh team geno7 **".
+*   **`documentation.md`**: A comprehensive write-up of the reverse-engineering process, findings, and implementation details.
+
+## How to Run
+Ensure you have Python 3 installed. You can execute any `.wut` file directly using the interpreter:
+
+```bash
+python wut_interpreter.py program.wut
+python wut_interpreter.py solution.wut
+```
+
+## Challenge Overview
+The original `broken_compiler.exe` provided was non-functional due to missing environment dependencies. This project successfully replaces the broken infrastructure with a modern, portable Python-based toolchain that adheres to the identified esoteric language specs.
+
+---
+*Created for the XPLOIT-PS challenge by team geno7.*
