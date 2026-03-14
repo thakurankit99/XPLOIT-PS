@@ -2,7 +2,13 @@
 
 ---
 
-## 📸 Screenshots
+## Solution
+
+![VAULT SYSTEM CLEARED](https://i.ibb.co/8DHjWYV5/image.png)
+
+---
+
+## Screenshots
 
 **All screenshots of the solution process are available here:**  
 🔗 **[View Screenshots on Google Drive](https://drive.google.com/drive/folders/1AkJE9WJZTAlhDNSilE4tCVggT_q75Wd1?usp=share_link)**
@@ -78,8 +84,12 @@ Found something weird in user_authentication_module (0x1936). It asks for operat
 ```
 So it always fails the check regardless of input.
 
+**Screenshot:** [04_auth_module.png](https://drive.google.com/drive/folders/1AkJE9WJZTAlhDNSilE4tCVggT_q75Wd1?usp=share_link)
+
 ### Problem 3: unlock function never gets called
 Even if auth worked, the function just prints a message and exits. There's an unlock_vault_sequence function at 0x19f2 that looks like it does the actual vault unlocking, but nothing calls it.
+
+**Screenshot:** [05_unlock_function.png](https://drive.google.com/drive/folders/1AkJE9WJZTAlhDNSilE4tCVggT_q75Wd1?usp=share_link)
 
 ## The Unlock Code Logic
 
@@ -111,6 +121,8 @@ Made 3 patches to the binary:
 - Replaces jump with call to unlock_vault_sequence
 - Actually reaches the unlock code
 
+**Screenshot:** [06_patching.png](https://drive.google.com/drive/folders/1AkJE9WJZTAlhDNSilE4tCVggT_q75Wd1?usp=share_link)
+
 ## Running It
 
 Created a script (patch_v2.py) to apply the patches automatically. Then made another script (final_solve.sh) that:
@@ -134,6 +146,8 @@ Vault Unlock Code:
 ```
 
 Got the success message!
+
+**Screenshot:** [07_success.png](https://drive.google.com/drive/folders/1AkJE9WJZTAlhDNSilE4tCVggT_q75Wd1?usp=share_link) - Shows complete terminal output with "VAULT SYSTEM CLEARED"
 
 ## Files
 
